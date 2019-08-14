@@ -1,0 +1,81 @@
+//  ******************CUTSOMIZE BOOTSTRAP******************
+
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Darker+Grotesque&display=swap');
+
+// CHANGE DEFAULT COLORS
+$primary: #92bbb7;
+$secondary: #945d37;
+//$light:
+//$dark:
+
+// CHANGE DEFAULT FONTS
+$font-family-base: 'Darker Grotesque', sans-serif;
+
+// CAHNGE HOVER ON LINKS BEHAVIOUR
+$link-hover-color: 0%;
+$emphasized-link-hover-darken-percentage: 0%;
+
+// IMPORT THE REST OF BOOTSTRAP
+@import 'bootstrap';
+
+//  ****************** end of CUTSOMIZE BOOTSTRAP******************
+
+body {
+  overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.showcase {
+  background: linear-gradient($secondary, $secondary) bottom left/ 15% 1px,
+    linear-gradient($secondary, $secondary) bottom left/ 1px 50%,
+    linear-gradient($secondary, $secondary) top right/ 1px 50%,
+    linear-gradient($secondary, $secondary) top right/ 15% 1px;
+  background-repeat: no-repeat;
+  animation: fadein 3s ease-in-out 1s forwards;
+  opacity: 0;
+}
+
+.photos {
+  animation: fadein 4s ease-in-out 3s forwards;
+  opacity: 0;
+  img {
+    opacity: 0.7;
+  }
+}
+
+.photos img:hover {
+  opacity: 1;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  letter-spacing: 10px;
+  margin-top: -15px !important;
+  margin-bottom: -15px !important;
+}
+
+.title-sm {
+  letter-spacing: 5px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*='col-'] {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin: 4px 0;
+  }
+}
