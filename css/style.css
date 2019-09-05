@@ -7570,16 +7570,16 @@ button.bg-dark:focus {
 body {
   overflow-x: hidden;
   opacity: 0;
-  transition: opacity 1s; }
+  transition: opacity 0.5s; }
 
 .showcase {
   background: linear-gradient(#945d37, #945d37) bottom left/15% 1px, linear-gradient(#945d37, #945d37) bottom left/1px 50%, linear-gradient(#945d37, #945d37) top right/1px 50%, linear-gradient(#945d37, #945d37) top right/15% 1px;
   background-repeat: no-repeat;
-  animation: fadein 3s ease-in-out 1s forwards;
+  animation: fadein 2s ease-in-out 0.5s forwards;
   opacity: 0; }
 
 .photos {
-  animation: fadein 4s ease-in-out 3s forwards;
+  animation: fadein 2s ease-in-out 2s forwards;
   opacity: 0; }
   .photos img {
     opacity: 0.7; }
