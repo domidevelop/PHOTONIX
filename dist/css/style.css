@@ -7568,9 +7568,7 @@ button.bg-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 body {
-  overflow-x: hidden;
-  opacity: 0;
-  transition: opacity 0.5s; }
+  overflow-x: hidden; }
 
 .showcase {
   background: linear-gradient(#945d37, #945d37) bottom left/15% 1px, linear-gradient(#945d37, #945d37) bottom left/1px 50%, linear-gradient(#945d37, #945d37) top right/1px 50%, linear-gradient(#945d37, #945d37) top right/15% 1px;
