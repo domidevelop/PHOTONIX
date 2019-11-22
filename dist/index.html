@@ -27,6 +27,28 @@
       content="PHOTONIX is a photo gallery of nature, places and people made by Domi, web designer at domidevelop.com. Visit and enjoy the photos!"
     />
     <meta property="fb:admins" content="10214132747536152" />
+    <!-- ****** favicons ****** -->
+	<link rel="shortcut icon" href="./favicons/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="./favicons/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="./favicons/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="./favicons/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="./favicons/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16.png">
+	<link rel="apple-touch-icon" href="./favicons/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicons/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicons/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicons/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicons/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicons/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicons/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicons/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="./favicons/favicon-144.png">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<!-- ****** favicons ****** -->
   </head>
   <body id="home">
     <!-- onload="document.body.style.opacity='1'" -->
@@ -310,13 +332,7 @@
       <hr />
       <div class="container">
         <div class="row">
-          <div class="col text-center py-3">
-            <a
-              href="#home"
-              class="text-decoration-none title-sm text-secondary h2"
-              ><i class="fas fa-camera text-primary"></i> PHOTONIX</a
-            >
-            <p>Copyright &copy; <span id="year"></span></p>
+          <div class="col text-center pt-3">
             <button
               class="btn btn-outline-primary text-secondary"
               data-toggle="modal"
@@ -324,7 +340,13 @@
             >
               A B O U T & C O N T A C T
             </button>
-            <p class="pt-2">
+            <a
+              href="#home"
+              class="text-decoration-none title-sm text-secondary h2 d-block pt-3"
+              ><i class="fas fa-camera text-primary"></i> PHOTONIX</a
+            >
+
+            <p class="">
               Check out <br />
               <a
                 href="https://domidevelop.com"
@@ -335,6 +357,19 @@
                 >domidevelop.com</a
               >
               for more projects.
+            </p>
+            <p class="small mt-3 mb-1">
+              &copy; <span id="year"></span>
+              <a
+                href="https://domidevelop.com/es"
+                target="_blank"
+                rel="noopener"
+                rel="noreferrer"
+                aria-label="domidevelop"
+                class="text-primary py-2 font-weight-bold"
+                >domidevelop</a
+              >
+              - web design
             </p>
           </div>
         </div>
@@ -422,17 +457,17 @@
     <script src="js/simple-lightbox.min.js"></script>
     <script>
       // Get the current year for the copyright
-      $('#year').text(new Date().getFullYear());
+      $("#year").text(new Date().getFullYear());
       // Lightbox init
       $(function() {
-        const $gallery = $('#gallery a').simpleLightbox({
+        const $gallery = $("#gallery a").simpleLightbox({
           // alertError: false
         });
       });
       // add smooth scrolling
-      $('footer a').on('click', function(e) {
+      $("footer a").on("click", function(e) {
         // check for hash value
-        if (this.hash !== '') {
+        if (this.hash !== "") {
           // prevent default behavior
           e.preventDefault();
 
@@ -440,7 +475,7 @@
           const hash = this.hash;
 
           //Animate smooth scroll
-          $('html, body').animate({
+          $("html, body").animate({
             scrollTop: $(hash).offset().top
           }),
             900,
